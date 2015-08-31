@@ -5,12 +5,10 @@
   box-shadow: 0 1px 3px #EDEEF0;
   list-style: none;
   padding: 0;
-  width: 500px;
+  width: 450px;
   color: #313131; }
   .super-list__item {
     position: relative;
-    display: -webkit-flex;
-    display: flex;
     align-items: stretch;
     padding: 0.5em 1em 0.5em 0.5em;
     border-bottom: 1px solid #EDEEF0;
@@ -21,20 +19,23 @@
       cursor: pointer;
       color: #00a2f0; }
     .super-list__item__icon {
+      float: left;
+      display: inline-block;
       margin-right: .75em; }
     .super-list__item:last-child {
       border: none; }
     .super-list__item__text {
       overflow: hidden;
-      display: block;
-      float: left;
+      display: inline-block;
       line-height: 3.2;
-      width: 475px; }
+      width: 87%;
+      vertical-align: middle;
+      white-space: nowrap;
+      float: left; }
       .super-list__item__text::after {
         position: absolute;
-        float: right;
         content: "";
-        right: 0;
+        right: 70px;
         top: 15px;
         height: 50%;
         width: 20%;
@@ -44,13 +45,14 @@
         background-image: -o-linear-gradient(right, white, rgba(255, 255, 255, 0));
         background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0)); }
     .super-list__item__handle {
-      display: block;
-      width: 25px; }
+      height: 50px;
+      float: right;
+      width: 0; }
       .super-list__item__handle::after {
         float: right;
         position: absolute;
         top: 2px;
-        right: 0;
+        right: 5px;
         content: url(http://www.dexterlesaca.com/img/action.png);
         z-index: 2; }
   .super-list .popover {

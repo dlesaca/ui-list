@@ -5,12 +5,11 @@
   box-shadow: 0 1px 3px #EDEEF0;
   list-style: none;
   padding: 0;
-  width: 500px;
+  width: 450px;
   color: #313131;
+  // overflow: hidden;
   &__item {
     position: relative;
-    display: -webkit-flex;
-    display: flex;
     align-items: stretch;
     padding: .5em 1em .5em .5em;
     border-bottom: 1px solid #EDEEF0;
@@ -22,6 +21,8 @@
       color: #00a2f0;
     }
     &__icon {
+      float: left;
+      display: inline-block;
       margin-right: .75em;
     }
     &:last-child {
@@ -29,15 +30,16 @@
     }
     &__text {
       overflow: hidden;
-      display: block;
-      float: left;
+      display: inline-block;
       line-height: 3.2;
-      width: 475px;
+      width: 87%;
+      vertical-align: middle;
+      white-space: nowrap;
+      float: left;
       &::after {
         position: absolute;
-        float: right;
         content: "";
-        right: 0;
+        right: 70px;
         top: 15px;
         height: 50%;
         width: 20%;
@@ -49,13 +51,14 @@
       }
     }
     &__handle {
-      display: block;
-      width: 25px;
+      height: 50px;
+      float: right;
+      width: 0;
       &::after {
         float: right;
         position: absolute;
         top: 2px;
-        right: 0;
+        right: 5px;
         content: url(http://www.dexterlesaca.com/img/action.png);
         z-index: 2;
       }
