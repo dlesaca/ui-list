@@ -15,9 +15,11 @@
     padding: 0.5em 1em 0.5em 0.5em;
     border-bottom: 1px solid #EDEEF0;
     white-space: nowrap;
-    transition: color 0.25s ease; }
+    transition: color 0.25s ease;
+    background-color: #ffffff; }
     .super-list__item:hover {
-      color: #bada55; }
+      cursor: pointer;
+      color: #00a2f0; }
     .super-list__item__icon {
       margin-right: .75em; }
     .super-list__item:last-child {
@@ -35,7 +37,7 @@
         right: 0;
         top: 15px;
         height: 50%;
-        width: 62%;
+        width: 20%;
         background-image: -webkit-linear-gradient(right, white, rgba(255, 255, 255, 0));
         background-image: -moz-linear-gradient(right, white, rgba(255, 255, 255, 0));
         background-image: -ms-linear-gradient(right, white, rgba(255, 255, 255, 0));
@@ -52,6 +54,7 @@
         content: url(http://www.dexterlesaca.com/img/action.png);
         z-index: 2; }
   .super-list .popover {
+    color: #313131;
     width: 200px; }
 
 .super-list {
